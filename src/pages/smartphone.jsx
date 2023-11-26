@@ -12,7 +12,7 @@ const SmartPhone = () => {
         />
         <div className="flex justify-center items-center py-4">
           <CustomButton
-            to="/Poco"
+            to="/poco"
             text="Lihat semua tipe"
             order="text_first"
             icon=">"

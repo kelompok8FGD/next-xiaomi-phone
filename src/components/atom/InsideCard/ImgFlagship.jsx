@@ -3,7 +3,7 @@ import Link from "next/link";
 const ImgFlagship = (props) => {
   const { PhonePicDesktop, PhonePicMobile, id } = props;
   return (
-    <a href={`/detail/${id}`}>
+    <Link href={`/detail/${id}`}>
       <picture className="w-full h-[460px]">
         <source media="(min-width: 768px)" srcSet={`${PhonePicDesktop}`} />
         <img
@@ -12,7 +12,7 @@ const ImgFlagship = (props) => {
           className="inset-0 object-cover w-full h-[460px]"
         />
       </picture>
-    </a>
+    </Link>
   );
 };
 

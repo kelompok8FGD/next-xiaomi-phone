@@ -24,7 +24,7 @@ const SiteNavbar = () => {
             title="Store"
           />
           <List
-            redirect="/poco"
+            redirect="/smartphone"
             text="SmartPhone"
             className="h-full px-[8px] lg:px-[16px]"
             title="SmartPhone"

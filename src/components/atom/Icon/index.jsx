@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 /* eslint-disable react/prop-types */
 const Icon = (props) => {
   const { redirect, classname } = props;
@@ -6,11 +8,11 @@ const Icon = (props) => {
       <li className="navigation__item shortcut__item">
         <div role="button" tabIndex="0">
           <div className="shortcut__item--wrapper  ">
-            <a href={redirect}>
+            <Link href="/home">
               <i
                 className={`micon micon-${classname} shortcut__icon px-[8px] lg:px-[16px]`}
               ></i>
-            </a>
+            </Link>
           </div>
         </div>
       </li>

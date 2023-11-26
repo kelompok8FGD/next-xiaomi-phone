@@ -94,13 +94,13 @@ const LearnMoreButton = ({
   };
 
   return (
-    <a href={`/detail/${id}`}>
+    <Link href={`/ProductDetails/poco/${id}`}>
       <button onClick={onClick} className={Variants(variants)}>
         {order === "iconFirst" && icon && <div>{icon}&nbsp;</div>}
         {text}
         {order === "textFirst" && icon && <div>&nbsp;{icon}</div>}
       </button>
-    </a>
+    </Link>
   );
 };
 

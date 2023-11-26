@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 // app component
 function NavbarProducts(props) {
@@ -11,28 +12,28 @@ function NavbarProducts(props) {
           <Dropdown.Content>
             <Dropdown.List>
               <Dropdown.Item>
-                <a
+                <Link
                   href={toTitle1}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
                 >
                   {title1}
-                </a>
+                </Link>
               </Dropdown.Item>
               <Dropdown.Item>
-                <a
+                <Link
                   href={toTitle2}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
                 >
                   {title2}
-                </a>
+                </Link>
               </Dropdown.Item>
               <Dropdown.Item>
-                <a
+                <Link
                   href={toTitle3}
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer rounded-md"
                 >
                   {title3}
-                </a>
+                </Link>
               </Dropdown.Item>
             </Dropdown.List>
           </Dropdown.Content>

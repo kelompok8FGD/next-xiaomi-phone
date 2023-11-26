@@ -1,6 +1,7 @@
 import React from "react";
 import GooglePlay from "/src/assets/global/google-play-logo.svg";
 import FooterList from "./FooterList";
+import Image from "next/image";
 
 const list1 = [
   { to: "redmi", pagename: "Redmi Note 11" },
@@ -134,7 +135,7 @@ const Footer = () => {
                   aria-label="Temukan di Google Play Store"
                   className="flex justify-between"
                 >
-                  <img
+                  <Image
                     src={GooglePlay}
                     className="h-[20px]"
                     alt=""

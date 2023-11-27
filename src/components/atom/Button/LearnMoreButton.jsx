@@ -94,7 +94,7 @@ const LearnMoreButton = ({
   };
 
   return (
-    <Link href={`/ProductDetails/poco/${id}`}>
+    <Link href={`/ProductDetails/${id}`}>
       <button onClick={onClick} className={Variants(variants)}>
         {order === "iconFirst" && icon && <div>{icon}&nbsp;</div>}
         {text}

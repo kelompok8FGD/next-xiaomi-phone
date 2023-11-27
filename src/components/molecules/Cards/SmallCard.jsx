@@ -38,7 +38,7 @@ export default function SmallCard() {
             {currentSmallCard.map((poco, i) => {
               return (
                 <div
-                  key={i}
+                  key={poco.id}
                   className={`flex flex-col bg-[#ffffff] items-center md:relative font-inter pt-10 px-5 text-center gap-2 md:hover:shadow-lg md:hover:ease-out md:duration-[250ms]`}
                 >
                   <TitleCard

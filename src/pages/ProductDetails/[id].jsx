@@ -1,16 +1,28 @@
+// const DetailProductPage = () => {
+//   return (
+//     <>
+//       <h1>Detail Product</h1>
+//       <div>Product : </div>
+//     </>
+//   );
+// };
+
+import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "next/navigation";
 import axios from "axios";
 
 export default function DetailPoco() {
+  const { query } = useRouter();
   const [dataDetail, setDataDetail] = useState({});
 
-  const params = useParams();
+  // const params = useParams();
 
   const getDetailApiPoco = async () => {
     const response = await axios(
-      `https://6533becde1b6f4c59046358c.mockapi.io/Poco/Product/user/${params.id}`
+      `https://6533becde1b6f4c59046358c.mockapi.io/Poco/Product/user/${query?.id}`
     );
+
     setDataDetail(response.data);
   };
 
